@@ -5,7 +5,7 @@ import json
 import textwrap
 import re
 
-boturl ="https://discordapp.com/api/webhooks/768917976065245235/9rDlfr7-n-JfdYT9LWvI_6RwpyOgmPQsROF1u1z0RTOGXMcHZ99XYTxCqe8oXm09gzyl"
+boturl =""
 
 linklist = ["https://ufora.ugent.be/d2l/le/news/rss/237608/course?token=a8hwkr1nxy74mx8d16b20",
             "https://ufora.ugent.be/d2l/le/news/rss/221698/course?token=a894nwfbntq37h5fd9e4",
