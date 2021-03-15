@@ -34,7 +34,7 @@ def jsonpost(item):
 
     json_body["embeds"] = []
     embed = {}
-    embed["title"] = item.title
+    embed["title"] = unescape(item.title)
     cleanr = re.compile('<.*?>')
     embed["description"] = "<@&765162715735916556>\n\n" + re.sub(cleanr, '', textwrap.wrap(unescape(item.summary), width=300)[0]) + "..."
     embed["url"] = item.link
