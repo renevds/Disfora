@@ -1,9 +1,10 @@
+from html import unescape
 import feedparser
-import time
-import requests
 import json
-import textwrap
 import re
+import requests
+import textwrap
+import time
 
 boturl =""
 
@@ -35,7 +36,7 @@ def jsonpost(item):
     embed = {}
     embed["title"] = item.title
     cleanr = re.compile('<.*?>')
-    embed["description"] = "<@&765162715735916556>\n\n" + re.sub(cleanr, '', textwrap.wrap(item.summary, width=300)[0]) + "..."
+    embed["description"] = "<@&765162715735916556>\n\n" + re.sub(cleanr, '', textwrap.wrap(unescape(item.summary), width=300)[0]) + "..."
     embed["url"] = item.link
     embed["color"] = 1991880
     embed["footer"] = {}
